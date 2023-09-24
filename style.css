@@ -1,0 +1,153 @@
+/*
+Theme Name: The Truth Oracle Theme
+Author: Anna Werno
+Version: 1.0
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Arsenal", sans-serif;
+}
+
+body {
+  background-color: #011201;
+  color: #e6ebe6;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1370px;
+  height: 100vh;
+}
+
+.title {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 4.2rem;
+  position: relative;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rem;
+  padding-top: 10rem;
+}
+
+button {
+  border: none;
+  border-radius: 0.8rem;
+  padding: 1rem 2rem;
+  background-color: #e6ebe6;
+  color: #011201;
+}
+
+button:hover {
+  cursor: pointer;
+  color: #000200;
+  background-color: #cfd4cf;
+}
+
+.generateDecision {
+  font-size: 8.4rem;
+  font-family: "Arsenal", sans-serif;
+  font-weight: bold;
+  max-width: 85rem;
+}
+
+.refresh {
+  background-color: #829d82;
+  font-size: 2.8rem;
+  font-family: "Arsenal", sans-serif;
+  font-style: italic;
+  position: absolute;
+  top: 600px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer {
+  padding: 0rem 4rem;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: sticky;
+  bottom: 15px;
+  color: #ada8b6;
+}
+
+ion-icon {
+  color: #ada8b6;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  font-size: 3.82rem;
+}
+
+.footer-ind {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.copyright {
+  font-size: 1.6rem;
+}
+
+/* Below 960px */
+@media (max-width: 60em) {
+  .title {
+    font-size: 3.6rem;
+  }
+
+  .generateDecision {
+    font-size: 5.8rem;
+    max-width: 52rem;
+  }
+}
+
+/* Below 592px */
+@media (max-width: 37em) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .generateDecision {
+    font-size: 4.6rem;
+    max-width: 44rem;
+  }
+  s .refresh {
+    font-size: 2.2rem;
+    padding: 0.5rem 1rem;
+    top: 400px;
+  }
+}
+
+/* Below 464px */
+@media (max-width: 29em) {
+  .title {
+    font-size: 2.8rem;
+  }
+
+  .generateDecision {
+    font-size: 4rem;
+    max-width: 38rem;
+  }
+
+  .refresh {
+    font-size: 2rem;
+  }
+}
